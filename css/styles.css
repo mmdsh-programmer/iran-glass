@@ -171,4 +171,17 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
+.main-header {
+  width: 100%;
+}
+
+.main-header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-header .container {
+  max-width: 1840px;
+}
 /*# sourceMappingURL=styles.css.map */
