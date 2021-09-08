@@ -6,5 +6,44 @@
   }
   .container {
     max-width: 1840px;
+    border-bottom: 1px solid #fff;
+  }
+  .header-logo {
+    font-family: $saolDisplayLight;
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    margin: 20px 0 12px 0;
+  }
+  .header-navbar {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    .header-menu {
+      display: flex;
+    }
+    .menu-link {
+      margin: 0 30px;
+      font-family: NittiGrotesk;
+      font-size: 20px;
+    }
+  }
+  .header-utilities {
+    display: flex;
+    align-items: center;
+    .lang-switch {
+      margin-right: 61px;
+      font-family: Kalameh;
+      font-size: 16px;
+    }
+    .instagram {
+      width: 20px;
+      height: 20px;
+    }
+    .header-utilities-menu {
+      display: flex;
+      align-items: center;
+    }
   }
 }

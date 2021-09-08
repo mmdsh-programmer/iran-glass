@@ -1,3 +1,12 @@
+@font-face {
+  font-family: SaolDisplay;
+  src: url(../../fonts/SaolDisplay-Light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
 html,
 body,
 div,
@@ -183,5 +192,66 @@ body {
 
 .main-header .container {
   max-width: 1840px;
+  border-bottom: 1px solid #fff;
+}
+
+.main-header .header-logo {
+  font-family: SaolDisplay;
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  margin: 20px 0 12px 0;
+}
+
+.main-header .header-navbar {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+}
+
+.main-header .header-navbar .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-header .header-navbar .menu-link {
+  margin: 0 30px;
+  font-family: NittiGrotesk;
+  font-size: 20px;
+}
+
+.main-header .header-utilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-header .header-utilities .lang-switch {
+  margin-right: 61px;
+  font-family: Kalameh;
+  font-size: 16px;
+}
+
+.main-header .header-utilities .instagram {
+  width: 20px;
+  height: 20px;
+}
+
+.main-header .header-utilities .header-utilities-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */
