@@ -1,0 +1,124 @@
+.main-body {
+  .hero {
+    position: relative;
+    padding-top: 185px;
+    .background {
+      width: 100%;
+      height: 1149px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.58;
+      filter: blur(12px);
+      background-image: $grey-lighten;
+      z-index: -1;
+    }
+    .container {
+      max-width: 1840px;
+      grid-template-columns: repeat(8, auto);
+      //grid-template-columns: 6.97vw 7.29vw 6.92vw 18.54vw 6.5vw 7.29vw 10.8vw auto;
+      grid-template-rows: 280px 180px 600px 834px;
+    }
+    .hero-title.main-title {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      line-height: 140px;
+      max-width: 383px;
+    }
+    .hero-title {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      font-family: $saolDisplayLight;
+      font-size: clamp(4vw, 8vw, 154px);
+      font-weight: 300;
+      color: $hero-text;
+    }
+    .hero-title:nth-child(2) {
+      margin-left: 120px;
+    }
+    .hero-subtitle-container {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      position: relative;
+    }
+    .hero-subtitle {
+      font-family: $saolDisplayLight;
+      font-size: clamp(2vw, 2.98vw, 55px);
+      font-weight: 300;
+      color: $hero-text;
+      margin-left: clamp(50px, 21vw, 407px);
+    }
+    .hero-subtitle:first-child {
+      margin-top: 80px;
+    }
+    .scroll-down {
+      position: absolute;
+      top: 260px;
+      left: 7.2vw;
+    }
+    .hero-description-container {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+    .hero-description {
+      margin-left: 59px;
+      font-family: $nittiGrotesk;
+      font-size: clamp(20px, 1.46vw, 28px);
+      font-weight: 300;
+      line-height: 1.25;
+      color: $hero-text;
+      max-width: 500px;
+      margin-top: 116px;
+    }
+    .hero-link {
+      text-decoration: none;
+      color: #fff;
+      font-family: $nittiGrotesk;
+      font-size: clamp(18px, 1vw, 20px);
+      font-weight: 500;
+      line-height: 1.75;
+      text-transform: uppercase;
+      position: relative;
+      top: 75px;
+      left: 5.27vw;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 69px;
+        height: 69px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        top: -23px;
+        left: -19px;
+      }
+    }
+    .hero-image-container.first {
+      max-width: 810px;
+      max-height: 1068px;
+      grid-column: 2/9;
+      grid-row: 1/5;
+      justify-self: flex-end;
+      margin-top: 160px;
+      border-top-left-radius: 23.5vw;
+      border-top-right-radius: 23.5vw;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .hero-image-container.second {
+      max-width: 631px;
+      max-height: 834px;
+      grid-column: 1/9;
+      grid-row: 4/5;
+      justify-self: end;
+      margin-right: clamp(200px, 32.78vw, 604px);
+      margin-top: 50px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

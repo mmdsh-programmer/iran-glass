@@ -26,10 +26,18 @@ body {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .flex-column {
   flex-direction: column;
 }
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.block {
+  display: block;
 }
